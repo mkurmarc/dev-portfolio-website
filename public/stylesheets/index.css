@@ -1,69 +1,134 @@
 body {
-    background-color: rgb(3, 83, 66);
-    /* background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%); */
+    /* background-color: rgb(12, 92, 75); */
+    background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
     font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: 1em;
+}
+
+.main {
+    margin: 5em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    color: rgb(20, 20, 20);
+}
+
+/*/ --- NAVBAR --- /*/
 .nav-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 1.25em;
     
 }
 
 .nav-item {   
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
     list-style-type: none;
     font-size: 1em;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Rubik', sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.45px;
     color: whitesmoke;
+
 }
 
-.nav-container a {
-    color: inherit;
-}
-
-.main {
-    display: block;
-    margin: 5em 0 0 0;
-}
-
+/*/ --- HEADER SECTION --- /*/
 .header-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 .header-item {
-    width: 30%;
+    width: 35em;
     height: auto;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
 }
 
-#building-websites {
-    max-width: 100%;
-    height: auto;
-    
+.header-item:last-child {
+    align-self: center;
 }
 
-#see-projects::after {
-    content: " >";
-    /* add background as an img */
+.header-item > p {
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+.local-links {
+    color: whitesmoke;
 }
 
 h1 {
     font-family: 'Lora', serif;
-    font-size: large;
+    font-size: 3rem;
+}
+/* link under image; cta means 'call to action' */
+#games-gallery-cta { 
+    font-size: 0.75em;
+    padding: 0;
+   
 }
 
+/* image */
+#building-websites {
+    max-width: 100%;
+    max-height: 100%;
+  
+}
+/* link to projects section */
+#see-projects {
+    color: whitesmoke;
+    letter-spacing: 1.3px;
+    margin-top: 20px;
+}
 
-@media (max-width: 1650px) {
+#see-projects::after {
+    content: " >";
+    color: whitesmoke;
+    /* add background as an img */
+}
+
+/*/ --- FEATURED PROJECTS SECTION --- /*/
+#featured-projects {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+
+}
+
+/*/ --- ONLY MEDIA QUERIES --- /*/
+@media (max-width: 775px) {
 
     .header-container {
-        display: flex;
-        flex-flow: column wrap;
+        flex-wrap: wrap;
+        
+    }
+
+    /* image */
+    #building-websites {
+        max-width: 90%;
+        max-height: 90%;
+    
+    } 
+}
+
+@media (min-width: 1145px) {
+
+    #games-gallery-cta { 
+        padding-top: 10px;
     }
 }
