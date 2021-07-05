@@ -62,8 +62,12 @@ p {
     font-family: 'Rubik', sans-serif;
     letter-spacing: 1.45px;
     color: whitesmoke;
-
 }
+
+.nav-link {
+    color: whitesmoke;
+}
+
 
 /****** HEADER SECTION ******/
 h1 {
@@ -83,7 +87,6 @@ h1 {
 .header-item {
     width: 31em;
     height: auto;
-
 }
 
 .header-item:last-child {
@@ -94,22 +97,18 @@ h1 {
     font-size: 1em;
     line-height: 1.6;
 }
-
-
     /* p tag eith link under image; cta means 'call to action' */
 #games-gallery-cta { 
     font-size: 0.75em;
     padding: 0;
     padding-top: 2.5em;
-    text-align: center;
-   
+    text-align: center;   
 }
 
 #games-gallery-cta > a::after {
     content: " >";
     color: whitesmoke;
 }
-
     /* image */
 #building-websites {
     max-width: 100%;
@@ -124,12 +123,11 @@ h1 {
 #see-projects > a {
     color: whitesmoke;
     letter-spacing: 1.3px;
-    /* margin-top: 25px; */
     font-size: 1rem;
 }
 
-#see-projects::after {
-    content: " >";
+#see-projects > a::after {
+    content: url("../images/arrow_down.png");
     color: whitesmoke;
     /* add background as an img */
 }
@@ -143,16 +141,14 @@ h1 {
 
 h2 {
     font-family: 'Castoro', serif;
-    font-size: 3.25rem;
-    /* border-bottom: dotted rgb(37, 37, 37); */
-    padding: 2.75em 0 0.75em 0;
+    font-size: 3.6rem;
+    padding: 3em 0 0.75em 0;
     margin: 0;
 }
 
 #projects-container {
     display: flex;
     align-content: center;
-    /* justify-content: center; */
     flex-flow: column wrap;        
 }
 
@@ -179,6 +175,10 @@ h2 {
     font-weight: 500;
     word-spacing: 1px;
     line-height: 1.5;
+}
+
+.project-item:after {
+    content: url("../images/arrow_forward.png");
 }
 
 /****** FOOTER ******/
@@ -221,20 +221,23 @@ h2 {
     margin-top: 1px;
 }
 
+/****** EFFECTS ******/
+.thick:hover {
+    text-decoration: solid underline whitesmoke 3px;
+}
+
 
 /****** ONLY MEDIA QUERIES ******/
 @media (max-width: 775px) {
 
     .header-container {
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;        
     }
 
     /* image */
     #building-websites {
         max-width: 90%;
-        max-height: 90%;
-    
+        max-height: 90%;    
     } 
 }
 
