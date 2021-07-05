@@ -32,7 +32,7 @@ a {
 p {
     margin-block-start: 0em;
     margin-block-end: 0em;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 }
 
 .main {
@@ -148,8 +148,8 @@ h2 {
 
 #projects-container {
     display: flex;
-    align-content: center;
-    flex-flow: column wrap;        
+    flex-flow: column wrap;
+    flex-basis: 62em;        
 }
 
 .project-item {
@@ -163,23 +163,41 @@ h2 {
     border-bottom: dotted rgb(37, 37, 37);
 }
 
-.project-item > h3 {
+.project-info > h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: 2.75rem;
     color: whitesmoke;
 }
     /* project description */
-.project-item > p {
+.project-info > p {
     font-family: 'Raleway';
     font-weight: 500;
     word-spacing: 1px;
     line-height: 1.5;
 }
 
-.project-item:after {
+.project-info:before {
+    content: url("../images/arrow_down.png");
+}
+
+.project-info:after {
+    content: url("../images/arrow_forward.png");
+
+    width: 24px;
+    height: 24px;
+
+}
+
+.project-item > h3:before {
+    content: url("../images/arrow_down.png");
+}
+
+.project-item > h3:after {
     content: url("../images/arrow_forward.png");
 }
+
+
 
 /****** FOOTER ******/
 .footer {
@@ -203,10 +221,14 @@ h2 {
     letter-spacing: 0.75px;
 }
 
+.footer-item > p {
+    padding-top: 10px;
+}
+
 .footer-item > h5 {
     font-family: 'Castoro', serif;
     font-size: 1.25em;
-    color: rgb(37, 37, 37);
+    color: rgb(44, 44, 44);
 }
     /* bible quote footer item */
 .footer-item:last-child {
@@ -218,7 +240,8 @@ h2 {
 }
 
 .footer-item:last-child > p {
-    margin-top: 1px;
+    margin-top: 2px;
+    padding-top: 0;
 }
 
 /****** EFFECTS ******/
