@@ -102,13 +102,24 @@ h1 {
     font-size: 0.75em;
     padding: 0;
     padding-top: 2.5em;
-    text-align: center;   
+    text-align: center;
+    margin-top: 10px;   
+}
+
+#games-gallery-cta > a {
+    color: whitesmoke;
+    padding-left: 4px;
 }
 
 #games-gallery-cta > a::after {
-    content: " >";
-    color: whitesmoke;
+    content: "";
+    background: url("../images/arrow-right.png") no-repeat;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
 }
+
     /* image */
 #building-websites {
     max-width: 100%;
@@ -123,13 +134,17 @@ h1 {
 #see-projects > a {
     color: whitesmoke;
     letter-spacing: 1.3px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #see-projects > a::after {
-    content: url("../images/arrow_down.png");
-    color: whitesmoke;
-    /* add background as an img */
+    content: "";
+    background: url(../images/arrow-down-o.png) no-repeat;
+    /* background-size: 20px 20px; */
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    margin: 3px 0 0 10px;
 }
 
 
@@ -141,7 +156,7 @@ h1 {
 
 h2 {
     font-family: 'Castoro', serif;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     padding: 3em 0 0.75em 0;
     margin: 0;
 }
@@ -155,19 +170,25 @@ h2 {
 .project-item {
     max-width: 62em;
     height: auto;
-    border-top: dotted rgb(37, 37, 37);
+    border-top: 2px dotted rgb(37, 37, 37);
     padding: 2.25em 0 2.25em 0;
 }
 
 .project-item:last-child {
-    border-bottom: dotted rgb(37, 37, 37);
+    border-bottom: 2px dotted rgb(37, 37, 37);
 }
-
+    /* info container */
+.project-info {
+    display: flex;
+    justify-content: space-between;
+}
+    /* project title */
 .project-info > h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     color: whitesmoke;
+
 }
     /* project description */
 .project-info > p {
@@ -177,27 +198,11 @@ h2 {
     line-height: 1.5;
 }
 
-.project-info:before {
-    content: url("../images/arrow_down.png");
+#expand-arrow {
+    margin: 10px 5px 0 0;
+    height: 30px;
+    width: 30px;
 }
-
-.project-info:after {
-    content: url("../images/arrow_forward.png");
-
-    width: 24px;
-    height: 24px;
-
-}
-
-.project-item > h3:before {
-    content: url("../images/arrow_down.png");
-}
-
-.project-item > h3:after {
-    content: url("../images/arrow_forward.png");
-}
-
-
 
 /****** FOOTER ******/
 .footer {
@@ -252,27 +257,32 @@ h2 {
 
 /****** ONLY MEDIA QUERIES ******/
 @media (max-width: 775px) {
-
     .header-container {
         flex-wrap: wrap;        
     }
-
-    /* image */
+        /* image */
     #building-websites {
         max-width: 90%;
         max-height: 90%;    
     } 
 }
 
-@media (min-width: 1145px) {
-
-    #games-gallery-cta { 
-        padding-top: 10px;
+@media (max-width: 810px) {
+    .project-info > h3 {
+        font-size: 1.7rem;
     }
+
+    .header-container {
+        flex-wrap: wrap;        
+    }
+        /* image */
+    #building-websites {
+        max-width: 90%;
+        max-height: 90%;    
+    } 
 }
 
 @media (max-width: 1160px) {
-
     .header-item {
         padding-left: 10px;
         padding-right: 10px;
