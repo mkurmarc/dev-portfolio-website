@@ -190,18 +190,30 @@ h2 {
     color: whitesmoke;
 
 }
-    /* project description */
-.project-info > p {
-    font-family: 'Raleway';
-    font-weight: 500;
-    word-spacing: 1px;
-    line-height: 1.5;
-}
 
 #expand-arrow {
     margin: 10px 5px 0 0;
     height: 30px;
     width: 30px;
+}
+
+.hidden-proj-info {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.demo-gif {
+    width: 50%;
+    height: 35%;
+}
+    /* project description */
+.hidden-proj-info > p {
+    font-family: 'Raleway';
+    font-weight: 500;
+    word-spacing: 1.75px;
+    line-height: 1.5;
+    font-size: 1.3em;
+    padding: 0 10px 0 1rem;
 }
 
 /****** FOOTER ******/
@@ -280,6 +292,10 @@ h2 {
         max-width: 90%;
         max-height: 90%;    
     } 
+
+    .hidden-proj-info > p {
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 1160px) {
