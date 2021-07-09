@@ -20,7 +20,11 @@ h5 {
 body {
     /* background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 79%); 1st iteration*/
     /* background-image: linear-gradient(315deg,#14557b 0%,  #65a19a 70%); 2nd iteration*/
-    background-image: linear-gradient(315deg,#14557bd2 0%,  #65a19a 90%);
+    /* background-image: linear-gradient(315deg,#14557bd2 0%,  #65a19a 90%); */
+    background: #7772A4;
+    background: -moz-linear-gradient(top, #7772A4 0%, #22B0D0 50%, #7772A4 100%);
+    background: -webkit-linear-gradient(top, #7772A4 0%, #22B0D0 50%, #7772A4 100%);
+    background: linear-gradient(to bottom, #7772A4 0%, #22B0D0 50%, #7772A4 100%);
     font-size: 18px;
     margin: 0;
     padding: 0 15px;
@@ -186,6 +190,7 @@ h2 {
     border-bottom: 2px dotted rgb(37, 37, 37);
 }
     /* info container */
+/*** maybe add flex shrink so the image shrinks at a slower rate than the text */    
 .project-info {
     display: flex;
     justify-content: space-between;
@@ -222,7 +227,7 @@ h2 {
     word-spacing: 1px;
     line-height: 3;
     font-size: 0.95em;
-    padding: 0 3em 0 2em;
+    padding: 0 4.6em 0 3em;
 }
 
 
@@ -236,6 +241,10 @@ h2 {
     width: 62em;
     display: block;
     margin: auto;
+}
+
+.divider img::after {
+
 }
 
 /****** FOOTER ******/
