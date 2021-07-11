@@ -1,3 +1,21 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
+body { 
+    line-height: 1;
+}
+ol,ul { 
+    list-style: none;
+}
+blockquote,q { 
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after { 
+    content: ''; content: none;
+}
+table { 
+    border-collapse: collapse; border-spacing: 0;
+}
+
 h2 {
     font-size: 0;
     margin-block-start: 0;
@@ -17,14 +35,22 @@ h5 {
     margin-block-end: 0;
 }
 
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    /* margin-top: 1em; */
+}
+
+/* #################  CSS RESET ABOVE  ######################*/
+
 body {
     /* background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 79%); 1st iteration*/
     /* background-image: linear-gradient(315deg,#14557b 0%,  #65a19a 70%); 2nd iteration*/
     /* background-image: linear-gradient(315deg,#14557bd2 0%,  #65a19a 90%); */
     background: #7772A4;
-    background: -moz-linear-gradient(top, #7772A4 0%, #22B0D0 50%, #7772A4 100%);
-    background: -webkit-linear-gradient(top, #7772A4 0%, #22B0D0 50%, #7772A4 100%);
-    background: linear-gradient(to bottom, #7772A4 0%, #22B0D0 50%, #7772A4 100%);
+    background: -moz-linear-gradient(top, #7772A4 0%, #22B0D0 82%, #7772A4 100%);
+    background: -webkit-linear-gradient(top, #7772A4 0%, #22B0D0 82%, #7772A4 100%);
+    background: linear-gradient(to bottom, #7772A4 0%, #22B0D0 82%, #7772A4 100%);
     font-size: 18px;
     margin: 0;
     padding: 0 15px;
@@ -34,19 +60,12 @@ a {
     text-decoration: none;
 }
 
-p {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    /* margin-top: 1em; */
-}
-
 .main {
-    margin: 5em 0 0 0;
+    margin: 3em 0 0 0;
     display: flex;
     align-content: center;
     flex-direction: column;
     color: rgb(37, 37, 37);
-    /* padding: 0 10px; */
 }
 
 /****** NAVBAR ******/
@@ -54,7 +73,7 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 1.25em;
+    padding-top: 2.2em;
     
 }
 
@@ -83,8 +102,10 @@ p {
 /****** HEADER SECTION ******/
 h1 {
     font-family: 'Castoro', serif;
-    font-size: 4rem;
+    font-size: 4.25rem;
     line-height: 0.95;
+    padding-bottom: 0.5em;
+    font-weight: 600;
 }
 
 .header-container {
@@ -93,6 +114,10 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     word-spacing: 2px;
+}
+
+.header-item:first-child {
+    padding-top: 3em;
 }
 
 .header-item {
@@ -107,6 +132,9 @@ h1 {
 .header-item > p {
     font-size: 1em;
     line-height: 1.6;
+    padding-bottom: 1.6em;
+    /* letter-spacing: 1.5px;
+    word-spacing: 1.5px; */
 }
     /* p tag eith link under image; cta means 'call to action' */
 #games-gallery-cta { 
@@ -139,22 +167,22 @@ h1 {
 }
     /* link to projects section */
 #see-projects {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 #see-projects > a {
     color: whitesmoke;
     letter-spacing: 1.3px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #see-projects > a::after {
     content: "";
     background: url(../images/arrow-down-o.png) no-repeat;
-    /* background-size: 20px 20px; */
+    background-size: 22px 22px;
     position: absolute;
-    height: 24px;
-    width: 24px;
+    height: 22px;
+    width: 22px;
     margin: 3px 0 0 10px;
 }
 
@@ -171,6 +199,7 @@ h2 {
     font-size: 3.2rem;
     padding: 3em 0 0.75em 0;
     margin: 0;
+    font-weight: 600;
 }
 
 #projects-container {
@@ -230,6 +259,18 @@ h2 {
     padding: 0 4.6em 0 3em;
 }
 
+.hidden-proj-info:first-child div {
+    display: block;
+    width: 25em;
+}
+
+.hidden-proj-info
+
+.hidden-proj-info > div img {
+    width: 22em;
+    height: 15em;
+}
+
 
 /****** DIVIDER ******/
 .divider {
@@ -243,9 +284,6 @@ h2 {
     margin: auto;
 }
 
-.divider img::after {
-
-}
 
 /****** FOOTER ******/
 .footer {
