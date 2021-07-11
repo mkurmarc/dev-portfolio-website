@@ -238,46 +238,69 @@ h2 {
     height: 30px;
     width: 30px;
 }
-
+    /* hidden info section container */
 .hidden-proj-info {
     display: flex;
     margin: 2rem 1rem 1rem 1rem;
+    /* flex-wrap: wrap; */
 }
-    /* img gif of project demo */
-.demo-gif {
-    width: 36%;
-    height: 25%;
+
+.hidden-proj-item {
+    max-width: 50%;
+}
+
+.tech-specs {
+    display: flex;
+    justify-content: space-evenly;
+}
+    /* tech-specs is the container for the uls */
+.tech-specs ul {
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    line-height: 1.5;
+}
+    /* titles of unordered lists */
+.tech-specs ul li:first-child {
+    font-weight: 500;
+    
 }
     /* project description */
-.hidden-proj-info > p {
-    /* font-family: 'Raleway'; */
+.hidden-proj-item > p {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     word-spacing: 1px;
-    line-height: 3;
+    line-height: 2.5;
     font-size: 0.95em;
-    padding: 0 4.6em 0 3em;
+    padding: 0 2em 0 1.7em;
 }
-
-.hidden-proj-info:first-child div {
-    display: block;
-    width: 25em;
+    /* container for links to proj demo, live, ... */
+.proj-links {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.75em;
 }
-
-.hidden-proj-info
-
-.hidden-proj-info > div img {
-    width: 22em;
-    height: 15em;
+    
+.link-item {
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
 }
-
+    /* img gif of project demo */
+.demo-gif {
+    width: 100%;
+    height: 25%;
+}
 
 /****** DIVIDER ******/
 .divider {
     width: 62em;
     margin: auto;
 }
-
+    /* the criss-cross design */
 .divider img {
     width: 62em;
     display: block;
@@ -367,6 +390,22 @@ h2 {
 
     .hidden-proj-info > p {
         font-size: 0.8em;
+    }
+}
+
+@media (max-width: 900px) {
+    .hidden-proj-info {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .hidden-proj-item {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .hidden-proj-item > p {
+        padding: 1.1em 0.5em;
     }
 }
 
