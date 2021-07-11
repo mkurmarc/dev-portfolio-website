@@ -58,6 +58,7 @@ body {
 
 a {
     text-decoration: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 .main {
@@ -83,7 +84,6 @@ a {
     list-style-type: none;
     font-size: 1em;
     font-weight: 300;
-    font-family: 'Rubik', sans-serif;
     letter-spacing: 1.45px;
     color: whitesmoke;
 }
@@ -125,38 +125,63 @@ h1 {
     height: auto;
 }
 
-.header-item:last-child {
+/* .header-item:last-child {
     align-self: center;
-}
+} */
 
 .header-item > p {
     font-size: 1em;
     line-height: 1.6;
-    padding-bottom: 1.6em;
+    margin-bottom: 1.6em;
     /* letter-spacing: 1.5px;
     word-spacing: 1.5px; */
 }
     /* p tag eith link under image; cta means 'call to action' */
 #games-gallery-cta { 
     font-size: 0.75em;
-    padding: 0;
-    padding-top: 2.5em;
     text-align: center;
-    margin-top: 10px;   
+    margin-top: 3em;
+    display: inline;   
+    /* transition-property: transform;
+    transition-duration: 300ms; */
 }
 
-#games-gallery-cta > a {
+#cta-link-cont {
+    display: inline;
+}
+
+#cta-link-cont:hover {
+    -moz-transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+    -ms-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+}
+
+/* #games-gallery-cta > span:hover {
+    -moz-transform: translate(6px, 0px);
+    -webkit-transform: translate(6px, 0px);
+    -o-transform: translate(6px, 0px);
+    -ms-transform: translate(6px, 0px);
+    transform: translate(10px, 0px);
+} */
+
+#cta-link-cont a {
     color: whitesmoke;
     padding-left: 4px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8em;
 }
 
-#games-gallery-cta > a::after {
+#cta-link-cont  a::after {
     content: "";
     background: url("../images/arrow-right.png") no-repeat;
     position: absolute;
     height: 24px;
     width: 24px;
     margin-left: 5px;
+    margin-top: 3px;
 }
 
     /* image */
@@ -166,14 +191,24 @@ h1 {
   
 }
     /* link to projects section */
+    /*
+    ### space between a tag and the ::after arrow isnt affected by the :hover effect
+    ### so transform reverts when hovering between the two. Fix this. Maybe by using
+    ### using div or span to group p tag and add hover to new div instead.
+    */
 #see-projects {
     margin-top: 10px;
+    width: 112px;
+    /* transition: transform 500ms easeOutSine 1s; */
+    transition-property: transform;
+    transition-duration: 300ms;
 }
 
 #see-projects > a {
     color: whitesmoke;
     letter-spacing: 1.3px;
     font-size: 1rem;
+    font-weight: 300;
 }
 
 #see-projects > a::after {
@@ -186,6 +221,14 @@ h1 {
     margin: 3px 0 0 10px;
 }
 
+#see-projects:hover {
+    -moz-transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+    -ms-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+    
+}
 
 /****** PROJECTS SECTION ******/
 #projects-section {
@@ -247,6 +290,12 @@ h2 {
 
 .hidden-proj-item {
     max-width: 50%;
+}
+
+.hidden-proj-info > .hidden-proj-item:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .tech-specs {
@@ -355,7 +404,13 @@ h2 {
 }
 
 /****** EFFECTS ******/
-
+/* .translate-rt {
+    -moz-transform: translate(6px, 0px);
+    -webkit-transform: translate(6px, 0px);
+    -o-transform: translate(6px, 0px);
+    -ms-transform: translate(6px, 0px);
+    transform: translate(6px, 0px);
+} */
 
 /* .thick:hover {
     text-decoration: solid underline whitesmoke 3px;
@@ -393,10 +448,10 @@ h2 {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 829px) {
     .hidden-proj-info {
         flex-wrap: wrap;
-        flex-direction: column;
+        justify-content: center;
     }
 
     .hidden-proj-item {
@@ -406,6 +461,10 @@ h2 {
 
     .hidden-proj-item > p {
         padding: 1.1em 0.5em;
+    }
+
+    .tech-specs {
+        justify-content: space-between;
     }
 }
 
