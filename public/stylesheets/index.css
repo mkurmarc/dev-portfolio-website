@@ -125,46 +125,38 @@ h1 {
     height: auto;
 }
 
-/* .header-item:last-child {
-    align-self: center;
-} */
-
-.header-item > p {
+.header-item  p {
     font-size: 1em;
     line-height: 1.6;
     margin-bottom: 1.6em;
-    /* letter-spacing: 1.5px;
-    word-spacing: 1.5px; */
 }
+
+.header-item div {
+    text-align: center;
+    margin-top: 1em;
+}
+
     /* p tag eith link under image; cta means 'call to action' */
 #games-gallery-cta { 
     font-size: 0.75em;
     text-align: center;
     margin-top: 3em;
     display: inline;   
-    /* transition-property: transform;
-    transition-duration: 300ms; */
 }
 
 #cta-link-cont {
-    display: inline;
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 300ms;
 }
 
 #cta-link-cont:hover {
-    -moz-transform: translate(0px, 10px);
-    -webkit-transform: translate(0px, 10px);
-    -o-transform: translate(0px, 10px);
-    -ms-transform: translate(0px, 10px);
-    transform: translate(0px, 10px);
+    -moz-transform: translate(5px, 0px);
+    -webkit-transform: translate(5px, 0px);
+    -o-transform: translate(5px, 0px);
+    -ms-transform: translate(5px, 0px);
+    transform: translate(5px, 0px);
 }
-
-/* #games-gallery-cta > span:hover {
-    -moz-transform: translate(6px, 0px);
-    -webkit-transform: translate(6px, 0px);
-    -o-transform: translate(6px, 0px);
-    -ms-transform: translate(6px, 0px);
-    transform: translate(10px, 0px);
-} */
 
 #cta-link-cont a {
     color: whitesmoke;
@@ -222,11 +214,11 @@ h1 {
 }
 
 #see-projects:hover {
-    -moz-transform: translate(0px, 10px);
-    -webkit-transform: translate(0px, 10px);
-    -o-transform: translate(0px, 10px);
-    -ms-transform: translate(0px, 10px);
-    transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 6px);
+    -webkit-transform: translate(0px, 6px);
+    -o-transform: translate(0px, 6px);
+    -ms-transform: translate(0px, 6px);
+    transform: translate(0px, 6px);
     
 }
 
@@ -404,14 +396,6 @@ h2 {
 }
 
 /****** EFFECTS ******/
-/* .translate-rt {
-    -moz-transform: translate(6px, 0px);
-    -webkit-transform: translate(6px, 0px);
-    -o-transform: translate(6px, 0px);
-    -ms-transform: translate(6px, 0px);
-    transform: translate(6px, 0px);
-} */
-
 /* .thick:hover {
     text-decoration: solid underline whitesmoke 3px;
 } */
@@ -471,6 +455,10 @@ h2 {
 @media (max-width: 1006px) {
     .footer-container {
         justify-content: space-between;
+    }
+
+    .header-item:last-child {
+        align-self: center;
     }
 }
 
