@@ -42,6 +42,9 @@ p {
 }
 
 /* #################  CSS RESET ABOVE  ######################*/
+html {
+    font-size: 18px;
+}
 
 body {
     /* background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 79%); 1st iteration*/
@@ -51,7 +54,7 @@ body {
     background: -moz-linear-gradient(top, #7772A4 0%, #22B0D0 82%, #7772A4 100%);
     background: -webkit-linear-gradient(top, #7772A4 0%, #22B0D0 82%, #7772A4 100%);
     background: linear-gradient(to bottom, #7772A4 0%, #22B0D0 82%, #7772A4 100%);
-    font-size: 18px;
+    /* font-size: 18px; */
     margin: 0;
     padding: 0 15px;
 }
@@ -199,7 +202,7 @@ h1 {
 #see-projects > a {
     color: whitesmoke;
     letter-spacing: 1.3px;
-    font-size: 1rem;
+    font-size: 0.92em;
     font-weight: 300;
 }
 
@@ -231,7 +234,7 @@ h1 {
 
 h2 {
     font-family: 'Castoro', serif;
-    font-size: 3.2rem;
+    font-size: 3.1em;
     padding: 3em 0 0.75em 0;
     margin: 0;
     font-weight: 600;
@@ -263,7 +266,7 @@ h2 {
 .project-info > h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
-    font-size: 2.6rem;
+    font-size: 2.6em;
     color: whitesmoke;
 
 }
@@ -400,9 +403,10 @@ h2 {
     text-decoration: solid underline whitesmoke 3px;
 } */
 
-
+/* ########  CHANGE QUERIES TO EM SIZE, NOT PX OR REM  ######### */
 /****** ONLY MEDIA QUERIES ******/
-@media (max-width: 775px) {
+
+@media (max-width: 43.06em) {
     .header-container {
         flex-wrap: wrap;        
     }
@@ -413,7 +417,7 @@ h2 {
     } 
 }
 
-@media (max-width: 810px) {
+@media (max-width: 45em) {
     .project-info > h3 {
         font-size: 1.7rem;
     }
@@ -432,7 +436,7 @@ h2 {
     }
 }
 
-@media (max-width: 829px) {
+@media (max-width: 46.06em) {
     .hidden-proj-info {
         flex-wrap: wrap;
         justify-content: center;
@@ -452,7 +456,7 @@ h2 {
     }
 }
 
-@media (max-width: 1006px) {
+@media (max-width: 55.89em) {
     .footer-container {
         justify-content: space-between;
     }
@@ -462,7 +466,7 @@ h2 {
     }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 64.44em) {
     .header-item {
         padding-left: 10px;
         padding-right: 10px;
