@@ -15,17 +15,9 @@ app.set('view engine', 'ejs');
 // direct Express to the public/stylesheets folder for css 
 app.use(express.static("public"));
 
-function clicked() {
-    let clicked = true;
-}
-
 // --- INDEX - renders index.ejs (aka home) --- //
 app.get('/', (req, res) => {
-    // const btn1 = document.querySelector('#cbtn1');
-    // btn1.addEventListener('click', function() {
-    //     let clicked = true;
-    // });
-    res.render('index', clicked); // aka views/index.ejs
+    res.render('index'); // aka views/index.ejs
 });
 
 // --- ABOUT - renders about.ejs --- //
@@ -37,9 +29,6 @@ app.get('/about', (req, res) => {
 app.get('/games', (req, res) => {
     res.render('games'); // aka views/games.ejs
 });
-
-
-
 
 
 app.listen(port, () => {
