@@ -1,2 +1,2 @@
 # dev-portfolio-website
-My full stack portfolio website. Made with JS, HTML, CSS, Node, Express and MongoDB. 
+My full stack portfolio website. Made with Node.JS, HTML, CSS, EJS, Express and MongoDB. 
