@@ -1,203 +1,203 @@
 <%- include('partials/head') %>
-    <%- include('partials/navbar') %>
+<%- include('partials/navbar') %>
 
-        <main class="main">
-            <header class="header-container">
-                <div class="header-item">
-                    <p>Welcome, I'm Marc Rios</p>
-                    <h1>A Web Developer from Los Angeles</h1>
-                    <p>
-                        I am a Full-Stack Web Developer
-                        Recently, I graduated from Western Governors University with
-                        a Bachelor degree in Computer Science.
-                    </p>
-                    <p id="see-projects">
-                        <a href="#projects-section">See Projects</a>
-                        <!-- img tag? for down arrow icon. Also, both text and logo link to some place -->
-                    </p>
+<main class="main">
+    <header class="header-container">
+        <div class="header-item">
+            <p>Welcome, I'm Marc Rios</p>
+            <h1>A Web Developer from Los Angeles</h1>
+            <p>
+                I am a Full-Stack Web Developer
+                Recently, I graduated from Western Governors University with
+                a Bachelor degree in Computer Science.
+            </p>
+            <p id="see-projects">
+                <a href="#projects-section">See Projects</a>
+                <!-- img tag? for down arrow icon. Also, both text and logo link to some place -->
+            </p>
+        </div>
+        <div class="header-item">
+            <img src="/images/building-websites.svg"
+                alt="simple illustration of 3 people building a giant web browser"
+                id="building-websites">
+            <div>
+                <p id="games-gallery-cta">
+                    Want to play some games? Go to my
+                </p>
+                <p id="cta-link-cont">
+                    <a href="games.ejs">games gallery</a>
+                </p>   
+            </div>                 
+        </div>
+    </header>
+    <section id="projects-section">
+        <div id="projects-container">
+            <h2>Projects</h2>
+            <!-- first featured project -->
+            <div class="project-item">
+                <div class="project-info">
+                    <h3>Name of Project One</h3>
+                    <img src="/images/chevron-down.png"
+                            alt="arrow to expand details of project 1"
+                            class="expand-arrow">                         
                 </div>
-                <div class="header-item">
-                    <img src="/images/building-websites.svg"
-                        alt="simple illustration of 3 people building a giant web browser"
-                        id="building-websites">
-                    <div>
-                        <p id="games-gallery-cta">
-                            Want to play some games? Go to my
-                        </p>
-                        <p id="cta-link-cont">
-                            <a href="games.ejs">games gallery</a>
-                        </p>   
-                    </div>                 
-                </div>
-            </header>
-            <section id="projects-section">
-                <div id="projects-container">
-                    <h2>Projects</h2>
-                    <!-- first featured project -->
-                    <div class="project-item">
-                        <div class="project-info">
-                            <h3>Name of Project One</h3>
-                            <img src="/images/chevron-down.png"
-                                 alt="arrow to expand details of project 1"
-                                 id="cbtn1">                         
-                        </div>
-                        <!-- collapsable/hidden project info section below -->
-                                
-                            <div class="hidden-proj-info">
-                                <div class="hidden-proj-item">
-                                    <div>
-                                        <img src="/images/project-business-plan-design.jpg"
-                                        alt=""
-                                        class="demo-gif">
-                                    </div>                                
-                                    <div>
-                                        <ul class="proj-links">
-                                            <li class="link-item">Demo</li>
-                                            <li class="link-item">Live</li>
-                                            <li class="link-item">Github</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="hidden-proj-item">
-                                    <p>
-                                        This is the detailed desritpion of the project, and will
-                                        be placed at the right of the demo gif. The number of lines
-                                        is variable but im.
-                                    </p>
-                                    <div class="tech-specs">
-                                        <ul>
-                                            <li>Languages</li>
-                                            <li>item 1</li>
-                                            <li>item 2</li>
-                                            <li>item 3</li>
-                                        </ul>    
-                                        <ul>
-                                            <li>Frameworks</li>
-                                            <li>item 1</li>
-                                            <li>item 2</li>
-                                            <li>item 3</li>
-                                        </ul>
-                                        <ul>
-                                            <li>Packages</li>
-                                            <li>item 1</li>
-                                            <li>item 2</li>
-                                            <li>item 3</li>
-                                        </ul>
-                                    </div>                                
-                                </div>                         
-                            </div>
+                <!-- collapsable/hidden project info section below -->
                         
-                    </div>
-                    <!-- second featured project -->
-                    <div class="project-item">
-                        <div class="project-info">
-                            <h3>Name of Project Two</h3>
-                            <img src="/images/chevron-down.png"
-                                 alt="arrow to expand details of project 2"
-                                 id="expand-arrow">                         
-                        </div>
-                        <div class="hidden-proj-info">
-                            <div class="hidden-proj-item">
-                                <div>
-                                    <img src="/images/project-business-plan-design.jpg"
-                                     alt=""
-                                     class="demo-gif">
-                                </div>                                
-                                <div>
-                                    <ul class="proj-links">
-                                        <li class="link-item">Demo</li>
-                                        <li class="link-item">Live</li>
-                                        <li class="link-item">Github</li>
-                                    </ul>
-                                </div>
+                    <div class="hidden-proj-info">
+                        <div class="hidden-proj-item">
+                            <div>
+                                <img src="/images/project-business-plan-design.jpg"
+                                alt=""
+                                class="demo-gif">
+                            </div>                                
+                            <div>
+                                <ul class="proj-links">
+                                    <li class="link-item">Demo</li>
+                                    <li class="link-item">Live</li>
+                                    <li class="link-item">Github</li>
+                                </ul>
                             </div>
-                            <div class="hidden-proj-item">
-                                <p>
-                                    This is the detailed desritpion of the project, and will
-                                    be placed at the right of the demo gif. The number of lines
-                                    is variable but im.
-                                </p>
-                                <div class="tech-specs">
-                                    <ul>
-                                        <li>Languages</li>
-                                        <li>item 1</li>
-                                        <li>item 2</li>
-                                        <li>item 3</li>
-                                    </ul>    
-                                    <ul>
-                                        <li>Frameworks</li>
-                                        <li>item 1</li>
-                                        <li>item 2</li>
-                                        <li>item 3</li>
-                                    </ul>
-                                    <ul>
-                                        <li>Packages</li>
-                                        <li>item 1</li>
-                                        <li>item 2</li>
-                                        <li>item 3</li>
-                                    </ul>
-                                </div>                                
-                            </div>                         
                         </div>
+                        <div class="hidden-proj-item">
+                            <p>
+                                This is the detailed desritpion of the project, and will
+                                be placed at the right of the demo gif. The number of lines
+                                is variable but im.
+                            </p>
+                            <div class="tech-specs">
+                                <ul>
+                                    <li>Languages</li>
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+                                </ul>    
+                                <ul>
+                                    <li>Frameworks</li>
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+                                </ul>
+                                <ul>
+                                    <li>Packages</li>
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+                                </ul>
+                            </div>                                
+                        </div>                         
                     </div>
-                    <!-- third featured project -->
-                    <div class="project-item">
-                        <div class="project-info">
-                            <h3>Name of Project Three</h3>
-                            <img src="/images/chevron-down.png"
-                                 alt="arrow to expand details of project 3"
-                                 id="expand-arrow">                         
-                        </div>
-                        <div class="hidden-proj-info">
-                            <div class="hidden-proj-item">
-                                <div>
-                                    <img src="/images/project-business-plan-design.jpg"
-                                     alt=""
-                                     class="demo-gif">
-                                </div>                                
-                                <div>
-                                    <ul class="proj-links">
-                                        <li class="link-item">Demo</li>
-                                        <li class="link-item">Live</li>
-                                        <li class="link-item">Github</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="hidden-proj-item">
-                                <p>
-                                    This is the detailed desritpion of the project, and will
-                                    be placed at the right of the demo gif. The number of lines
-                                    is variable but im.
-                                </p>
-                                <div class="tech-specs">
-                                    <ul>
-                                        <li>Languages</li>
-                                        <li>item 1</li>
-                                        <li>item 2</li>
-                                        <li>item 3</li>
-                                    </ul>    
-                                    <ul>
-                                        <li>Frameworks</li>
-                                        <li>item 1</li>
-                                        <li>item 2</li>
-                                        <li>item 3</li>
-                                    </ul>
-                                    <ul>
-                                        <li>Packages</li>
-                                        <li>item 1</li>
-                                        <li>item 2</li>
-                                        <li>item 3</li>
-                                    </ul>
-                                </div>                                
-                            </div>                         
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="divider">
-                <img src="/images/medium_pattern_stitch.svg"
-                     alt="illustration of a computer desk in a home workspace">
+                
             </div>
-        </main>
+            <!-- second featured project -->
+            <div class="project-item">
+                <div class="project-info">
+                    <h3>Name of Project Two</h3>
+                    <img src="/images/chevron-down.png"
+                            alt="arrow to expand details of project 2"
+                            class="expand-arrow">                         
+                </div>
+                <div class="hidden-proj-info">
+                    <div class="hidden-proj-item">
+                        <div>
+                            <img src="/images/project-business-plan-design.jpg"
+                                alt=""
+                                class="demo-gif">
+                        </div>                                
+                        <div>
+                            <ul class="proj-links">
+                                <li class="link-item">Demo</li>
+                                <li class="link-item">Live</li>
+                                <li class="link-item">Github</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden-proj-item">
+                        <p>
+                            This is the detailed desritpion of the project, and will
+                            be placed at the right of the demo gif. The number of lines
+                            is variable but im.
+                        </p>
+                        <div class="tech-specs">
+                            <ul>
+                                <li>Languages</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>    
+                            <ul>
+                                <li>Frameworks</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                            <ul>
+                                <li>Packages</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                        </div>                                
+                    </div>                         
+                </div>
+            </div>
+            <!-- third featured project -->
+            <div class="project-item">
+                <div class="project-info">
+                    <h3>Name of Project Three</h3>
+                    <img src="/images/chevron-down.png"
+                            alt="arrow to expand details of project 3"
+                            class="expand-arrow">                         
+                </div>
+                <div class="hidden-proj-info">
+                    <div class="hidden-proj-item">
+                        <div>
+                            <img src="/images/project-business-plan-design.jpg"
+                                alt=""
+                                class="demo-gif">
+                        </div>                                
+                        <div>
+                            <ul class="proj-links">
+                                <li class="link-item">Demo</li>
+                                <li class="link-item">Live</li>
+                                <li class="link-item">Github</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden-proj-item">
+                        <p>
+                            This is the detailed desritpion of the project, and will
+                            be placed at the right of the demo gif. The number of lines
+                            is variable but im.
+                        </p>
+                        <div class="tech-specs">
+                            <ul>
+                                <li>Languages</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>    
+                            <ul>
+                                <li>Frameworks</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                            <ul>
+                                <li>Packages</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                        </div>                                
+                    </div>                         
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider">
+        <img src="/images/medium_pattern_stitch.svg"
+                alt="illustration of a computer desk in a home workspace">
+    </div>
+</main>
 
-        <%- include('partials/footer') %>
+<%- include('partials/footer') %>
