@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 // direct Express to the public/stylesheets folder for css 
 app.use(express.static("public"));
 
-// --- INDEX - renders index.ejs (aka home) --- //
+// --- INDEX/WORK - renders index.ejs (aka home) --- //
 app.get('/', (req, res) => {
     res.render('index'); // aka views/index.ejs
 });

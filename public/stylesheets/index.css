@@ -117,6 +117,7 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     word-spacing: 2px;
+    margin-bottom: 10rem;
 }
 
 .header-item:first-child {
@@ -128,7 +129,7 @@ h1 {
     height: auto;
 }
 
-.header-item  p {
+.header-item p {
     font-size: 1em;
     line-height: 1.6;
     margin-bottom: 1.6em;
@@ -225,8 +226,8 @@ h1 {
     
 }
 
-/****** PROJECTS SECTION ******/
-#projects-section {
+/****** FEATURED PROJECTS SECTION ******/
+.projects-section {
     display: flex;
     justify-content: center;
     margin-bottom: 7em;
@@ -235,12 +236,12 @@ h1 {
 h2 {
     font-family: 'Castoro', serif;
     font-size: 3.1em;
-    padding: 3em 0 0.75em 0;
+    padding-bottom: 0.6em;
     margin: 0;
     font-weight: 600;
 }
 
-#projects-container {
+.projects-container {
     display: flex;
     flex-flow: column wrap;
     flex-basis: 62em;        
@@ -375,6 +376,94 @@ h2 {
     color: whitesmoke;
     letter-spacing: 0.75px;
 }
+
+
+/****** MY PROJECTS PAGE ******/
+.my-projects-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7em;
+}
+
+.my-projects-container {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 62em;        
+}
+
+.my-project-item {
+    max-width: 62em;
+    height: auto;
+    border-top: 2px dotted rgb(37, 37, 37);
+    padding: 2.25em 0 2.25em 0;
+}
+
+.my-project-item:last-child {
+    border-bottom: 2px dotted rgb(37, 37, 37);
+}
+
+.my-project-info {
+    display: flex;
+    justify-content: space-between;
+}
+    /* project title */
+.my-project-info > h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 2.6em;
+    color: whitesmoke;
+
+}
+
+.my-projects-title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    margin-top: 5.2em;
+    width: 50%;
+}
+
+.my-projects-title p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+    font-size: 0.9em;
+    word-spacing: 2px;
+    letter-spacing: 0.45px;
+    font-weight:500;
+}
+
+.my-projects-title h2 {
+    padding-bottom: 0;
+    font-size: 4.5em;
+}
+
+    /* hidden info section container */
+.my-hidden-proj-info {
+    display: flex;
+    margin: 2rem 1rem 1rem 1rem;
+    /* flex-wrap: wrap; */
+}
+
+.my-hidden-proj-item {
+    max-width: 50%;
+}
+
+.my-hidden-proj-info > .my-hidden-proj-item:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* project description */
+.my-hidden-proj-item > p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    word-spacing: 1px;
+    line-height: 2.5;
+    font-size: 0.95em;
+    padding: 0 2em 0 1.7em;
+}
+
 
 /****** FOOTER ******/
 .footer {
