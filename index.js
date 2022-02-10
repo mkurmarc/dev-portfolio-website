@@ -25,9 +25,9 @@ app.get('/about', (req, res) => {
     res.render('about'); // aka views/about.ejs
 });
 
-// --- GAMES - renders games.ejs --- //
-app.get('/games', (req, res) => {
-    res.render('games'); // aka views/games.ejs
+// --- PROJECTS - renders games.ejs --- //
+app.get('/projects', (req, res) => {
+    res.render('projects'); // aka views/games.ejs
 });
 
 

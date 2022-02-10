@@ -353,6 +353,28 @@ h2 {
     margin: auto;
 }
 
+/******* ABOUT ME PAGE *******/
+.favorites {
+    display: flex;
+    justify-content: center;
+    padding: 6.75em 0 3rem 0;
+}
+.favorites-container {
+    display: flex;
+    justify-content: space-between;
+    width: 62em;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.favorites-item {
+    width: 20rem;
+    height: 10rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: whitesmoke;
+    letter-spacing: 0.75px;
+}
 
 /****** FOOTER ******/
 .footer {
