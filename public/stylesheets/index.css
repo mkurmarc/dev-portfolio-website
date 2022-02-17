@@ -46,7 +46,7 @@ html {
     font-size: 18px;
 }
 
-body {
+.index {
     /* background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 79%); 1st iteration*/
     /* background-image: linear-gradient(315deg,#14557b 0%,  #65a19a 70%); */ /* 2nd iteration */
     /* background-image: linear-gradient(315deg,#14557bd2 0%,  #65a19a 90%); */
@@ -95,7 +95,9 @@ a {
     color: whitesmoke;
     text-decoration: dashed #65a19a;    
     transition: text-decoration 500ms steps(7, end) 75ms;
+    cursor: pointer;
 }
+
 
 .nav-link:hover {
     text-decoration: solid underline whitesmoke 3px;
@@ -355,6 +357,10 @@ h2 {
 }
 
 /******* ABOUT ME PAGE *******/
+.about {
+    background-color: #65a19a;
+}
+
 .favorites {
     display: flex;
     justify-content: center;
@@ -379,6 +385,10 @@ h2 {
 
 
 /****** MY PROJECTS PAGE ******/
+.my-projects {
+    background-color: #7772A4;
+}
+
 .my-projects-section {
     display: flex;
     justify-content: center;
